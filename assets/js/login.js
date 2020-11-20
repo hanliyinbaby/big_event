@@ -24,7 +24,7 @@ $(function () {
         var data = { username: $('#zhuceFrom [name="username"]').val(), password: $('#zhuceFrom [name="password"]').val() }
         $.ajax({
             type: "POST",
-            url: "/api/reguser",
+            url: "git/api/reguser",
             data: data,
             success: function (res) {
                 if (res.status !== 0) {
