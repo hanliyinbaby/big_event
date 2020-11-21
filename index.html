@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>后台</title>
+    <!-- 导入layui的css样式 -->
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header">
+            <div class="layui-logo">
+                <div><img src="/assets/images/logo.png" alt=""></div>
+            </div>
+            <!-- 头部区域（可配合layui已有的水平导航） -->
+            <ul class="layui-nav layui-layout-right">
+                <em class="text1"></em>
+                <li class="layui-nav-item">
+                    <a href="javascript:;">
+                        <img src="http://t.cn/RCzsdCq" class="layui-nav-img top_image">
+                        个人中心
+                    </a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="">基本资料</a></dd>
+                        <dd><a href="">更换头像</a></dd>
+                        <dd><a href="">重置密码</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item"><a href="javascript:;" id="loyout"><i
+                            class="layui-icon layui-icon-radio"></i>退出</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="layui-side layui-bg-black">
+            <div class="layui-side-scroll">
+                <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+                <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                    <div class="top">
+                        <span><img src="http://t.cn/RCzsdCq" class="layui-nav-img top_img"></span>
+                        <em class="text"></em>
+                        <b class="username1"></b>
+                    </div>
+                    <li class="layui-nav-item layui-this"><a href="/home/dashboard.html" target="fm"><i
+                                class="layui-icon layui-icon-home"></i>
+                            首页</a></li>
+                    <li class="layui-nav-item">
+                        <a class="" href="javascript:;"><i class="layui-icon layui-icon-read"></i>文章管理</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="javascript:;"><b class="layui-icon layui-icon-app"></b>文章类别</a></dd>
+                            <dd><a href="javascript:;"><b class="layui-icon layui-icon-app"></b>文章列表</a></dd>
+                            <dd><a href="javascript:;"><b class="layui-icon layui-icon-app"></b>发布文章</a></dd>
+                        </dl>
+                    </li>
+                    <li class="layui-nav-item">
+                    <li class="layui-nav-item">
+                        <a href="javascript:;"><i class="layui-icon layui-icon-username"></i>个人中心</a>
+                        <dl class="layui-nav-child">
+                            <dd><a href="/user/jibenziliao.html" target='fm'><b
+                                        class="layui-icon layui-icon-set-fill"></b>基本资料</a></dd>
+                            <dd><a href="javascript:;"><b class="layui-icon layui-icon-set-fill"></b>更换头像</a></dd>
+                            <dd><a href="/user/user_psw.html" target='fm'><b
+                                        class="layui-icon layui-icon-set-fill"></b>重置密码</a>
+                            </dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="layui-body">
+            <!-- 内容主体区域 -->
+            <div>
+                <iframe name="fm" src="/home/dashboard.html" frameborder="0"></iframe>
+            </div>
+        </div>
+
+        <div class="layui-footer">
+            <!-- 底部固定区域 -->
+            底部固定区域
+        </div>
+    </div>
+    <!-- 导入layui的js文件 -->
+    <script src='/assets/lib/layui/layui.all.js'></script>
+    <!-- 导入jquery的js文件 -->
+    <script src='/assets/lib/jquery.js'></script>
+    <!-- 导入过滤器js文件 -->
+    <script src='/assets/js/urlApi.js'></script>
+    <!-- 导入自己的js文件 -->
+    <script src='/assets/js/index.js'></script>
+</body>
+
+</html>

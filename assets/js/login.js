@@ -66,10 +66,12 @@ $(function () {
                         layer.msg(res.message);
                     });
                 }
-                return layui.use('layer', function () {
+                layui.use('layer', function () {
                     var layer = layui.layer;
                     layer.msg(res.message);
                     $('#dengluFrom')[0].reset()
+                    localStorage.setItem('token', res.token)
+                    location.href = '/index.html'
                 });
             }
         });
