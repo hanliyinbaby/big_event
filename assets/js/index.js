@@ -26,7 +26,7 @@ function getUserIfon() {
 //获取用户名并渲染在页面
 function userPic(user) {
     //获取用户的名称
-    var name = user.username || user.nickname
+    var name = user.nickname || user.username
     $('.username1').html('欢迎&nbsp;&nbsp;' + name)
     if (user.user_pic == null) {
         $('.layui-nav-img').hide()
