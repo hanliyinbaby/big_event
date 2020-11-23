@@ -10,7 +10,7 @@ $(function () {
         });
     })
 })
-//封装getUserIfon函数，来获取数据
+//封装getUserIfon函数，来获取用户信息
 function getUserIfon() {
     $.ajax({
         method: "GET",
